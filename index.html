@@ -37,24 +37,28 @@
     },
     methods: {
       calculate() {
+        const num1 = parseInt(this.firstNumber);
+        const num2 = parseInt(this.secondNumber);
+
         switch (this.operator) {
           case '+':
-            this.result = this.firstNumber + this.secondNumber;
+            this.result = num1 + num2;
             break;
           case '-':
-            this.result = this.firstNumber - this.secondNumber;
+            this.result = num1 - num2;
             break;
           case '*':
-            this.result = this.firstNumber * this.secondNumber;
+            this.result = num1 * num2;
             break;
           case '/':
-            this.result = this.firstNumber / this.secondNumber;
+            this.result = num1 / num2;
             break;
           default:
             this.result = 0;
         }
       }
     }
+
   });
 </script>
 
